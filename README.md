@@ -11,9 +11,11 @@ It will auto install dependencies and you don't need to worry about anything.
 # Import
 To use zubaan in your Jupyter notebook or python file, You can import it like this.
 
-from zubaan import NlpHub
+    from zubaan import NlpHub
+
 # Functions
-zubaan class has 8 functions that you can use.
+
+zubaan class has multiple functions that you can use. Some of them are explained here.
 
 ## Function 1 NlpHub.summary()
 Summary function is the main function of SimpleEDA. DataFrame is the input and it does not return anything but prints the output. In output you get Statistical summary of DataFrame like mean, median etc. Then you will get DataFrame rows and columns, null value count, column types in numeric and categorical class, unique value count and duplicate rows information.
