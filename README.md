@@ -17,29 +17,87 @@ To use zubaan in your Jupyter notebook or python file, You can import it like th
 
 zubaan class has multiple functions that you can use. Some of them are explained here.
 
-## Function 1 NlpHub.summary()
-Summary function is the main function of SimpleEDA. DataFrame is the input and it does not return anything but prints the output. In output you get Statistical summary of DataFrame like mean, median etc. Then you will get DataFrame rows and columns, null value count, column types in numeric and categorical class, unique value count and duplicate rows information.
+## Function 1 NlpHub.lemma()
+Lemmatization function accepts a string and return the lemmatized version of that input string.
 
-## Function 2 NlpHub.gua_hist_num()
-Graphical univariate analysis function accepts a DataFrame as input and plots histograms of each numeric column. This may take time based on number of columns and rows. It accepts only numerical columns. Don't worry, we can get numeric columns from your DataFrame.
+## Function 2 NlpHub.stem()
+Stem function accepts a string and return the stemmed version of that input string.
 
-## Function 3 NlpHub.gua_bar_cat()
-Graphical univariate analysis function accepts a DataFrame as input and plots bar charts of each categorical column. This may take time based on number of columns and rows. It accepts only categorical columns. Don't worry, we can get categorical columns from your DataFrame.
+## Function 3 NlpHub.capitalize()
+Capitalize function accepts a string and return the capitalized version of that input string.
 
-## Function 4 NlpHub.corr_columns()
-Correlation columns accepts DataFrame and a threshhold. It returns a list of highly correlated columns based on your threshhold.
+## Function 4 NlpHub.case_change()
+Case Change function accepts a string and case and return the case Changed version of that input string. Takes case as parameter. call as NlpHub.case_change(str, 'lower or upper')
 
-## Function 5 NlpHub.find_outliers()
-Find outliers function accepts DataFrame, a string for method argument(default: z-score, accepts iqr also) and a int for thresh argument. If you have provided iqr, you don't need to pass thresh. Return 2 numpy arrays, first one gives you rows and second one gives you column. For example array([23]) array([3]) means 23rd row is outlier on basis of 3rd column value. e.g [23][3]
+## Function 5 NlpHub.filter_alpha()
+ Filter Alphabet function accepts a string and return the filtered version of that input string.
 
-## Function 6 NlpHub.plot_boxplot()
-Plot Boxplot function accepts DataFrame and plot boxplot for each column. This may take time based on number of columns and rows. It accepts only numerical columns. Don't worry, we can get numerical columns from your DataFrame.
+## Function 6 NlpHub.find()
+Find function accepts a string and and a string to find return the index of match in input string. Call as NlpHub.find(str, 'str to find')
 
-## Function 7 NlpHub.plot_scatterplots()
-Plot scatterplot function accepts DataFrame and plot scatterplot for each column. Accepts a string containing a target column name. This may take time based on number of columns and rows. It accepts only numerical columns. Don't worry, we can get numerical columns from your DataFrame.
+## Function 7 NlpHub.remove_punct()
+Remove Punctuation function accepts a string and return the version of that input string with no puncts.
 
-## Function 8 NlpHub.feature_selection()
-This function selected important features from input DataFrame. Accepts DataFrame and a target column. This may take time based on number of columns and rows. It accepts only numerical columns. Don't worry, we can get numerical columns from your DataFrame.
+## Function 8 NlpHub.remove_sw()
+Remove Stopwords function accepts a string and a optional stopword list  and return the string without any stopwords.
+
+## Function 9 NlpHub.replace()
+Replace function accepts a string, a string to replace and a string to replace by and return the string after replacing the intended words. Call as NlpHub.find(str, 'str to replace', 'str to replace by')
+
+## Function 10 NlpHub.split()
+Split function accepts a string and a string to split and return the string after split it on given parameter. Call as NlpHub.split(str , ',')
+
+## Function 11 NlpHub.strip()
+Strip function accepts a string and a string to strip and return the string after stripping given parameter from left and right.
+
+## Function 12 NlpHub.sentiment()
+Sentiment function accepts a string and do sentiment analysis using textblob library. Return str
+
+## Function 13 NlpHub.dependency()
+Dependency function accepts a string and returns dependency dictionary with words as keys and their dependency as values. Uses Spacy library
+
+## Function 14 NlpHub.language()
+language function accepts a string and return the language of string using Spacy library.
+
+## Function 15 NlpHub.named_entity()
+Named Entity function accepts a string and returns Named Entity dict with words as keys and their entity as values. Uses Spacy library
+
+## Function 16 NlpHub.pos_tagging()
+Parts of Speech Tagging function accepts a string and returns Parts of Speech dict with words as keys and their POS as values. Uses Spacy library
+readability_score
+## Function 17 NlpHub.readability_score()
+Readability Score function accepts a string and returns flesch kincaid Readability Score dict. Uses Spacy library
+
+## Function 18 NlpHub.similar_word()
+Similar Word function accepts a string and a word to match and returns a string with maximum similarity.
+
+## Function 19 NlpHub.text_similarity()
+Text Similarity function accepts two string and returns similarity.
+
+## Function 20 NlpHub.clustering()
+Clustering function accepts two arguments, a string and list of strings and returns a list of dicts.
+        Clustering computes similarity of each word in string with each cluster word in the cluster_list
+        and add word to cluster with maximum similarity.
+        
+## Function 21 NlpHub.extract_terms()
+Extract Terms function accepts two arguments, a string and int. Int represents the number of important
+        terms to extract from given string.
+
+## Function 22 NlpHub.tfidf()
+tfidf function accepts a string document and generate tfidf matrix using sklearn tfidfVectorizer.       
+
+## Function 23 NlpHub.extract_relation()
+Extract Relation accepts a string and find any relation between entities of that string.
+
+## Function 24 NlpHub.tokenize_sentences()
+Tokenize sentence function accepts a string. That string is splitted into sentence using sentence boundary
+        detection. You can pass a complete book to split into sentences.
+
+## Function 25 NlpHub.word_cloud()
+Word Cloud fucntions accepts string and plot a word cloud. The bigger a word, the more important it is.
+
+## Function 26 NlpHub.pdf_to_txt()
+PDF to Text as the name suggests, convert pdf to txt file. Input file name if in same directory otherwise provide full path. 
 
 # About Author
 Hi there, My name is Muhammad Shahid and I am working as Data Scientist in Five Rivers Technologies. I have done BSCS from COMSATS University Islamabad and MSCS from NUCES FAST Islamabad. I have expertise in Data Science, Machine Learning(ML) and Natural Language Processing(NLP). If you have any query about this project, you may reach me at chshahidhamdam@gmail.com
