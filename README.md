@@ -3,7 +3,7 @@
 Zubaan is a wrapper around Spacy, NLTK and some other libraries simple NLP tasks. You can perform simple tasks with just 3 or 4 lines of code. Zubaan can perform basic NLP operations with less code and less hassle.
 
 Installation
-You can install SimpleEDA via pip. Write this command in terminal and voila, you have installed SimpleEDA.
+You can install Zubaan via pip. Write this command in terminal and voila, you have installed Zubaan.
 
     pip install zubaan
 It will auto install dependencies and you don't need to worry about anything.
