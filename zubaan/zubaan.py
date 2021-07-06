@@ -36,10 +36,8 @@ from matplotlib import pyplot as plt
 stemmer = SnowballStemmer('english')
 try:
     import en_core_web_md
-    nlp = en_core_web_md.load()
 except OSError:
-    print("Downloading language model for the spaCy POS tagger do not worry, this will only happen once")
-    os.system('python -m spacy download en_core_web_md')
+    print("Please download spacy model by executing this command. python -m spacy download en_core_web_md")
 import en_core_web_md
 nlp = en_core_web_md.load()
 punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
@@ -60,8 +58,8 @@ extra_words = ['i','me','my','myself','we','our','ours','ourselves','you','your'
 
 
 
-class NlpHub():
-    '''This class contains all NLP operations you can perform using NlpHub.
+class basicNLP():
+    '''This class contains all NLP operations you can perform using basicNLP.
     '''
 
     def __init__(self, input_str):
@@ -670,7 +668,7 @@ class NlpHub():
 
 
     def __personal_of(doc):
-        person_keys = NlpHub.__getKeysByValue(doc, "PERSON")
+        person_keys = basicNLP.__getKeysByValue(doc, "PERSON")
         return person_keys
 
 
@@ -691,10 +689,10 @@ class NlpHub():
         type : list
             returns a list of strings,
         '''
-        sent_namedEntity = NlpHub.named_entity(self)
+        sent_namedEntity = basicNLP.named_entity(self)
         print(sent_namedEntity)
-        sent_dependency = NlpHub.dependency(self)
-        x,y = NlpHub.__part_of(sent_dependency)
+        sent_dependency = basicNLP.dependency(self)
+        x,y = basicNLP.__part_of(sent_dependency)
         if x and y:
             ner = sent_namedEntity
             if x in ner:
@@ -703,7 +701,7 @@ class NlpHub():
             if y in ner:
                 if ner[y] == "PERSON" or ner[y] == "ORG":
                     relation = ""+ x +" and "+ y +" have relation of \"Part-of\""
-        person_list = NlpHub.__personal_of(sent_namedEntity)
+        person_list = basicNLP.__personal_of(sent_namedEntity)
         if len(person_list) > 1:
             relation = ""+ person_list[0] +" and "+ person_list[1] +" have relation of \"Personal Affiliation\""
             return relation
@@ -781,7 +779,6 @@ class NlpHub():
         str_txt = retstr.getvalue()
         retstr.close()
         return str_txt
-
 
 
 
