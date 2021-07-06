@@ -1,1 +1,1 @@
-from zubaan.zubaan import NlpHub
+from NlpHub.NlpHub import basicNLP
