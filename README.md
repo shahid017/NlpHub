@@ -64,7 +64,7 @@ Named Entity function accepts a string and returns Named Entity dict with words 
 
 ## Function 16 basicNLP.pos_tagging()
 Parts of Speech Tagging function accepts a string and returns Parts of Speech dict with words as keys and their POS as values. Uses Spacy library
-readability_score
+
 ## Function 17 basicNLP.readability_score()
 Readability Score function accepts a string and returns flesch kincaid Readability Score dict. Uses Spacy library
 
