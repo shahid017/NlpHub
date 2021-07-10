@@ -1,3 +1,10 @@
+# Version 1.0.3
+
+Updates.
+Package has been devided into four main classes. New functions are added such as Text to pdf, Text of Docx, Text to Speech, Word Frequency etc.
+
+
+
 # NlpHub
 
 NlpHub is a wrapper around Spacy, NLTK and some other libraries simple NLP tasks. You can perform simple tasks with just 3 or 4 lines of code. NlpHub can perform basic NLP operations with less code and less hassle.
