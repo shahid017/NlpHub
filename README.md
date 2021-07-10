@@ -39,13 +39,13 @@ This class contains all basic NLP operations which transform document or words s
 ## Functions
 Transformers class has multiple functions that you can use. Some of them are explained here.
 
-### Function 1 basicNLP.lemma()
+### Function 1 Transformers.lemma()
 Lemmatization function accepts a string and return the lemmatized version of that input string.
 
-### Function 2 basicNLP.stem()
+### Function 2 Transformers.stem()
 Stem function accepts a string and return the stemmed version of that input string.
 
-### Function 8 basicNLP.remove_sw()
+### Function 8 Transformers.remove_sw()
 Remove Stopwords function accepts a string and a optional stopword list  and return the string without any stopwords.
 
 
@@ -55,8 +55,11 @@ This class contains Text to Docx, Docx to text, text to pdf, pdf to text, text t
 ## Functions
 Convertors class has multiple functions that you can use. Some of them are explained here.
 
-##! Function 1 basicNLP.capitalize()
-Capitalize function accepts a string and return the capitalized version of that input string.
+### Function 1 Convertors.txt_to_speech()
+Text to speech accepts a text and converts into speech and save as mp3 file.
+
+### Function 1 Convertors.txt_to_pdf()
+Text to PDF accepts a string and a pdf file path and write that text to pdf.
 
 # Analyzers
 This class contains all basic NLP operations which transform and plot on data.
