@@ -6,12 +6,15 @@ Installation
 You can install NlpHub via pip. Write this command in terminal and voila, you have installed NlpHub.
 
     pip install NlpHub
+   
+
 It will auto install dependencies and you don't need to worry about anything.
 
 # Import
 To use NlpHub in your Jupyter notebook or python file, You can import it like this.
 
     from NlpHub import Annotators, Transformers, Convertors, Analyzers
+    Convertors.txt_to_speech("your text here", save_to= "path_to_mp3_file" )
 
 # Claases
 There are four classes in NlpHub, Annotators, Transformers, Convertors, Analyzers.
