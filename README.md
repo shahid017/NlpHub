@@ -90,6 +90,8 @@ Word frequency fucntions accepts string, counts word occurances and plot a bar g
 Hi there, My name is Muhammad Shahid and I am working as Data Scientist in Five Rivers Technologies. I have done BSCS from COMSATS University Islamabad and MSCS from NUCES FAST Islamabad. I have expertise in Data Science, Machine Learning(ML) and Natural Language Processing(NLP). If you have any query about this project, you may reach me at chshahidhamdam@gmail.com. Read about my journey here. 
 
 www.muhammadshahid.techsandooq.com
+
 https://www.linkedin.com/in/shahidsharif1/
+
 https://www.facebook.com/shahid.hamdam/
 
