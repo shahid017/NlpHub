@@ -16,7 +16,7 @@ To use NlpHub in your Jupyter notebook or python file, You can import it like th
     from NlpHub import Annotators, Transformers, Convertors, Analyzers
     Convertors.txt_to_speech("your text here", save_to= "path_to_mp3_file" )
 
-# Claases
+# Classes
 There are four classes in NlpHub, Annotators, Transformers, Convertors, Analyzers.
 
 
