@@ -1,7 +1,9 @@
 # Version 1.0.3
 
 Updates.
-Package has been devided into four main classes. New functions are added such as Text to pdf, Text of Docx, Text to Speech, Word Frequency etc.
+Package has been devided into four main classes. 
+New functions are added such as Text to pdf, Text of Docx, Text to Speech, Word Frequency, etc.
+word_cloud now takes an extra argument of plot=True or False. By default it’s true and the word_cloud function will generate a plot if set to false, it will return the word cloud object. The same is for the word_frequnecy function which is added in the 1.0.3 version.
 
 
 
